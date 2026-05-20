@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 10px;
+    padding: 0px;
+}
+
+.wrapper header nav ul li {
+    font-family: "Hind Vadodara", sans-serif;
+    text-decoration: none;
+    color: #331B3B;
+}
+
+.wrapper header nav ul li::before {
+    position: relative;
+    content: '';
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: #FDC221;
+    left: 10px;
+    top: 90%;
+}
+
+.wrapper header .logo h1 {
+    font-family: "Playfair Display", serif;
+}
+
+.wrapper header .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper header .contact .btn-facebook {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    display: flex;
+}
+
+.wrapper header .contact .btn-facebook .facebook-icon {
+    width: 20px;
+    height: 20px;
+}
