@@ -5,33 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1cccc83caa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
         <header class="flex justify-between">
-            <nav class="w-[30%]">
+            <nav class="">
                 <ul class="flex">
-                    <li class="text-lg cursor-pointer font-bold"><a href="/">Home</a></li>
-                    <li class="text-lg cursor-pointer"><a href="/">About Us</a></li>
-                    <li class="text-lg cursor-pointer"><a href="/">Services</a></li>
-                    <li class="text-lg cursor-pointer"><a href="/">Contact Us</a></li>
+                    <li class="text-lg cursor-pointer font-bold"><a href="/" class="true" id="btn-home">Home</a></li>
+                    <li class="text-lg cursor-pointer"><a href="/" id="btn-about">About Us</a></li>
+                    <li class="text-lg cursor-pointer"><a href="/" id="btn-services">Services</a></li>
+                    <li class="text-lg cursor-pointer"><a href="/" id="btn-contact">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="logo w-[20%] self-center">
+            <div class="logo self-center">
                 <h1 class="text-2xl">Dream Agency</h1>
             </div>
-            <div class="contact w-[15%]">
+            <div class="contact">
                 <button class="btn-facebook">
-                    <img src="img/facebook-icon.svg" class="facebook-icon" alt="facebook">
+                    <i class="fa-brands fa-facebook-f facebook-icon"></i>
                 </button>
                 <button class="btn-linkedin">
-                    <img src="img/linkedin-icon.svg" class="linkedin-icon" alt="linkedin">
+                    <i class="fa-brands fa-linkedin-in linkedin-icon"></i>
                 </button>
                 <button class="btn-instagram">
-                    <img src="img/instagram-icon.svg" class="instagram-icon" alt="instagram">
+                    <i class="fa-brands fa-instagram instagram-icon"></i>
                 </button>
             </div>
         </header>
+        <!-- <section class="background absolut">
+            <img src="img/header-icon1.png" class="background-image" alt="">
+        </section>
+        <section class="background-2">
+            <img src="img/Vector2.png" alt="">
+        </section>
+        <section class="background-3">
+            <img src="img/Ellipse 11.png" alt="">
+        </section> -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1 class="text-[87px]">We Help you <br /><span>to grow your</span> <br /><span class="hero-line">Business</span></h1>
+                <p class="text-[17px]">Lorem Ipsum has been the industry's standard dummy text ever <br /> since the 1500s, when an unknown printer took a galley of type and <br /> scrambled it to make a type specimen book.</p>
+                <button class="get-started-btn">Get Started</button>
+            </div>
+            <div class="hero-img">
+                <img src="img/hero-picture2.png" alt="">
+            </div>
+        </section>
         <main>
 
         </main>

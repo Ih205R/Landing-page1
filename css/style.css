@@ -2,8 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
-    margin: 10px;
+    margin: 0px;
     padding: 0px;
+    overflow: hidden;
+}
+
+.wrapper {
+    margin: 10px;
+}
+
+.wrapper header {
+    margin: 10px;
+}
+
+.wrapper header nav {
+    width: 25%;
+}
+
+.wrapper header nav ul {
+    margin: 10px;
+    gap: 20px;
 }
 
 .wrapper header nav ul li {
@@ -12,36 +30,199 @@
     color: #331B3B;
 }
 
-.wrapper header nav ul li::before {
+.wrapper header nav ul li a.false::before {
     position: relative;
     content: '';
     display: block;
-    width: 90%;
+    width: 0%;
     height: 2px;
     background-color: #FDC221;
-    left: 10px;
+    left: 0px;
     top: 90%;
+    transition: all 0.3s ease;
+}
+
+.wrapper header nav ul li a.true::before {
+    position: relative;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FDC221;
+    left: 0px;
+    top: 90%;
+    transition: all 0.3s ease;
+}
+
+.wrapper header .logo {
+    margin-right: 15%;
 }
 
 .wrapper header .logo h1 {
     font-family: "Playfair Display", serif;
+    font-weight: bold;
 }
 
 .wrapper header .contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 10%;
 }
 
 .wrapper header .contact .btn-facebook {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    background-color: blue;
     display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
 }
 
-.wrapper header .contact .btn-facebook .facebook-icon {
-    width: 20px;
-    height: 20px;
+.wrapper header .contact .btn-linkedin {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.wrapper header .contact .btn-instagram {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.wrapper header .contact .btn-facebook::after {
+    content: '';
+    position: absolute;
+    width: 43.61px;
+    height: 49.61px;
+    border: 2px solid #331B3B;
+    z-index: -3;
+    border-radius: 50%;
+    opacity: 0.64;
+    transform: rotate(30.5deg);
+    /* animation: hovered 1s ease infinite; */
+}
+
+.wrapper header .contact .btn-facebook.hovered::after {
+
+}
+
+@keyframes hovered {
+    0% {
+        transform: rotate(30.5deg);
+    }
+    50% {
+        transform: rotate(160deg);
+    }
+    100% {
+        transform: rotate(30.5deg);
+    }
+}
+
+.wrapper header .contact .btn-linkedin::after {
+    content: '';
+    position: absolute;
+    width: 43.61px;
+    height: 49.61px;
+    border: 2px solid #331B3B;
+    z-index: -3;
+    border-radius: 50%;
+    opacity: 0.64;
+    transform: rotate(30.5deg);
+}
+
+.wrapper header .contact .btn-instagram::after {
+    content: '';
+    position: absolute;
+    width: 43.61px;
+    height: 49.61px;
+    border: 2px solid #331B3B;
+    z-index: -3;
+    border-radius: 50%;
+    opacity: 0.64;
+    transform: rotate(30.5deg);
+}
+
+.wrapper .background {
+    position: absolute;
+    width: 867.54px;
+    height: 819.82px;
+    top: 0px;
+    left: 80%;
+}
+
+.wrapper .background .background-image {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.wrapper .background-2 {
+    position: absolute;
+    width: 444px;
+    height: 629.17px;
+    left: 70%;
+    top: 10%;
+    z-index: -1;
+}
+
+.wrapper .background-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .background-3 {
+    position: absolute;
+    width: 581px;
+    height: 498px;
+    left: 50%;
+    top: 20%;
+}
+
+.wrapper .background-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.wrapper .hero .hero-text h1, span, p {
+    font-family: "Hind Vadodara", sans-serif;
+    line-height: 99.8%;
+}
+
+.wrapper .hero .hero-text h1 {
+    font-weight: bold;
+}
+
+.wrapper .hero .hero-text h1 span {
+    font-weight: 300;
+}
+
+.wrapper .hero .hero-text p {
+    margin-top: 50px;
+}
+
+.wrapper .hero .hero-text .get-started-btn {
+    margin-top: 50px;
+    width: 207px;
+    height: 66px;
+    background-color: #331B3B;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
 }
